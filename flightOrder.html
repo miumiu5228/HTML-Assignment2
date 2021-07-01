@@ -1,0 +1,132 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Sign up</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <style>
+
+        body {
+            display: flex;
+            justify-content: center;
+            background-color:lightpink;
+        }
+
+        form {
+            width: 30%;
+        }
+
+        button {
+            width: 100%;
+            margin-left: 10px;
+        }
+
+        .form-group .top20 {
+            margin-top: 20px;
+        }
+
+
+        h1 {
+            text-align: center;
+        }
+
+       
+
+        button {
+            width:50px;
+            background-color:white;
+        }
+
+        input[type=number] {
+            margin-top: 20px;
+        }
+
+        input[type=email] {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+
+    <form>
+        <h1>FLIGHT ORDER</h1>
+        <div class="form-row">
+            <div class="col">
+                <label>From</label>
+                <select class="form-control" id="fromCity">
+                    <option>enter a city</option>
+                    <option>Taiwan</option>
+                    <option>USA</option>
+                    <option>Japan</option>
+                </select>
+            </div>
+            <div class="col">
+                <label>To</label>
+                <select class="form-control" id="toCity">
+                    <option>enter a city</option>
+                    <option>Taiwan</option>
+                    <option>USA</option>
+                    <option>Japan</option>
+                </select>
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="col">
+                <label>Departure Date</label>
+                <input type="date" class="form-control" id="departureDate">
+
+            </div>
+            <div class="col">
+                <label>Time Interval</label>
+                <input type="datetime" class="form-control" id="time">
+            </div>
+
+        </div>
+        <div class="form-row">
+            <div class="col">
+                <label>Return Date</label>
+                <input type="date" class="form-control" id="departureDate">
+
+            </div>
+            <div class="col">
+                <label>Time Interval</label>
+                <input type="datetime" class="form-control" id="time">
+            </div>
+
+        </div>
+        <div class="form-row">
+            <div class="col">
+                <label>Choos class</label>
+                <select class="form-control" id="class">
+                    <option>Choose class</option>
+                    <option>Economy</option>
+
+                </select>
+
+            </div>
+            <div class="col">
+                <label>12+</label>
+                <select class="form-control" id="agoAbovetwelve">
+                    <option>1</option>
+                   
+                </select>
+            </div>
+
+        </div>
+
+        <div class="form-row ">
+            <div class="col btn-col">
+                <button type="submit" class="form-control">Search</button>
+            </div>
+
+        </div>
+    </form>
+
+</body>
+</html>

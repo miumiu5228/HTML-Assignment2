@@ -1,0 +1,190 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Sign up</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <style>
+
+        body {
+            display: flex;
+            justify-content: center;
+            background-color: cornflowerblue;
+        }
+
+        form {
+            width: 30%;
+            margin-right:20px
+        }
+
+        button {
+            width: 100%;
+            margin-left: 10px;
+        }
+
+        .form-group {
+            margin-top: 20px;
+        }
+
+        .form-row {
+            margin-top: 20px;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+
+
+        button {
+            width: 50px;
+            background-color: white;
+        }
+
+        input[type=number] {
+            margin-top: 20px;
+        }
+
+        input[type=email] {
+            margin-top: 20px;
+        }
+
+        .row {
+            display: flex;
+            justify-content: center;
+        }
+
+        h1, h3, h6{
+            text-align:center
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>fakebook</h1>
+        <h3>Registration</h3>
+        <h6>It is safe and it will always be!</h6>
+        <div class="row">
+            <form>
+
+                <div class="form-row">
+                    <div class="col">
+                        <input type="text" class="form-control" placeholder="First Name" name="fname">
+                    </div>
+                    <div class="col">
+                        <input type="text" class="form-control" placeholder="Last Name" name="lname">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="col">
+                        <input type="email" class="form-control" placeholder="Your Email" name="email">
+                    </div>
+                    <div class="col">
+                        <input type="number" class="form-control" placeholder="Phone Number" name="phone">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="col">
+                        <input type="password" class="form-control" placeholder="Your Password" name="password">
+                    </div>
+                    <div class="col">
+                        <input type="url" class="form-control" placeholder="Website" name="Website">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="col">
+                        <label>Birthday</label>
+                        <input type="datetime" class="form-control" placeholder="date" name="date">
+                    </div>
+
+                </div>
+                <div class="form-check-inline">
+                    <label class="form-check-label">
+                        <input type="radio" class="form-check-input" name="female">Female
+                    </label>
+                </div>
+                <div class="form-check-inline">
+                    <label class="form-check-label">
+                        <input type="radio" class="form-check-input" name="optMaleradio">Male
+                    </label>
+                </div>
+                <div class="form-check-inline disabled">
+                    <label class="form-check-label">
+                        <input type="radio" class="form-check-input" name="Other"> Other
+                    </label>
+                </div>
+
+                <div class="form-row ">
+                    <div class="col btn-col">
+                        <button type="submit" class="form-control">Clear Form</button>
+                    </div>
+
+                </div>
+            </form>
+            <form>
+                <p>Important Information *requires</p>
+                <div class="form-row">
+                    <div class="col">
+
+                        <select class="form-control" id="country">
+                            <option>Country</option>
+                            <option>Taiwan</option>
+                            <option>USA</option>
+                            <option>Japan</option>
+                        </select>
+                    </div>
+                    <div class="col">
+
+                        <select class="form-control" id="village">
+                            <option>Village</option>
+
+                        </select>
+                    </div>
+                    <div class="col">
+
+                        <select class="form-control" id="district">
+                            <option>District</option>
+
+                        </select>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="col">
+
+                        <input type="text" class="form-control" id="Street" placeholder="Street">
+                    </div>
+                    <div class="col">
+
+                        <input type="text" class="form-control" id="Nr" placeholder="Nr">
+                    </div>
+                    <div class="col">
+
+                        <input type="text" class="form-control" id="floor" placeholder="Floor">
+                    </div>
+                    <div class="col">
+
+                        <input type="text" class="form-control" id="apNr" placeholder="ApNr">
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                  
+                    <textarea class="form-control" rows="5" id="comment" placeholder="Give Us More Information!!"></textarea>
+                </div>
+
+                <div class="form-row ">
+                    <div class="col btn-col">
+                        <button type="submit" class="form-control">Register</button>
+                    </div>
+
+                </div>
+            </form>
+        </div>
+        </div>
+</body>
+</html>
